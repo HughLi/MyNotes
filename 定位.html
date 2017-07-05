@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>相对定位</title>
+  <style type="text/css">
+  div{
+    width: 200px;
+    height: 200px;
+  }
+.box1{
+  background-color: yellowgreen;
+}
+.box2{
+  background-color: skyblue;
+  position: relative;
+  left: 100px;
+  top: 150px;
+  /*相对定位*/
+   /*position:relative*/
+  /*相对定位是相对于自己之前的位置的定位*/
+  /*相对定位是做元素位置微调使用的,相对自己原来的位置进行定位*/
+  /*如果一个盒子需要做位置调整那么就需要做相对定位*/
+  /*步骤:1.先声明,然后进调整*/
+  /*不脱标:相对定位是不会脱标的*/
+  /*对象显示不在原位置了,但是其真实位置依然,定位只是将其渲染到了新的位置,但不是真实所处的位置*/
+ /*相对定位有坑(不脱标导致定位后原来位置有空),一般不做压盖效果,
+ 就只有两个作用:
+ 1)微调
+ 2)做绝对定位的参考,子绝父相
+ 按钮使用input来做
+ 高矮不齐,底边对齐
+ */
+}
+.box3{
+  background-color: orange;
+
+}
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+</html>

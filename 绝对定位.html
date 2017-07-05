@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>绝对定位</title>
+  <style type="text/css">
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1 {
+      background-color: yellowgreen;
+    }
+
+    .box2 {
+      background-color: skyblue;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+
+      /*绝对布局: 
+      position:absolute
+      移动后会脱标
+      之前的空位将被后面的位置给占用
+      绝对定位后的行内元素可以设置宽高,因为绝对定位后脱离了标准流就不再被区分行内元素和块级元素
+      参考点,在绝对定位中特别重要
+      如果使用top描述的时候是以页面的上方
+      当使用bottom的时候,是相对于浏览器的首屏来做的定位
+      绝对定位里面的标签 无视padding 也就是起始位置是排除掉padding的
+      子绝父相(子视图为绝对位置,父标签为相对视图)
+      绝对定位在压盖上面运用特别多
+
+      */
+    }
+
+    .box3 {
+      background-color: goldenrod;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript">
+  // for (i=1;i<5;i++)
+    // alert("测试下JS")
+ var a =prompt('input something')
+   alert(`你剛才輸入的內容是${a}`)
+  </script>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+
+</html>
